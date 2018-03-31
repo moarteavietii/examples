@@ -11,7 +11,7 @@
     $scope.updateHashedText = function () {
       $scope.textLength = $scope.textToHash.length
 
-      $scope.hashedText = cryptoService.sha256($scope.textToHash)
+      $scope.hashedText = $scope.textToHash == '' ? '' : cryptoService.sha256($scope.textToHash)
       $scope.hashedTextLength = $scope.hashedText.length
 
       var bytes = []
