@@ -1,0 +1,60 @@
+<md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+        <md-tab label="SHA256">
+
+            <md-content class="sidebyside" ng-controller="HashController as hash">
+                <md-content class="md-padding">
+                    <md-input-container class="myarea">
+                        <label>Input</label>
+                        <textarea ng-model="textToHash" ng-change="updateHashedText()"></textarea>
+                        <small>{{textLength}}</small>
+                    </md-input-container>
+                </md-content>
+
+                <md-content class="md-padding">
+                    <md-input-container class="myarea">
+                        <label>Hash</label>
+                        <textarea ng-model="hashedText"></textarea>
+                        <small>{{hashedTextLength}}</small>
+                    </md-input-container>
+                </md-content>
+
+                <md-content class="md-padding">
+                    <md-input-container class="myarea">
+                        <label>Bits</label>
+                        <textarea ng-model="binaryValue"></textarea>
+                        <small>{{binaryValueLength}}</small>
+                    </md-input-container>
+                </md-content>
+            </md-content>
+
+
+            <md-content class="sidebyside" ng-controller="HashController as hash2">
+                <md-content class="md-padding">
+                    <md-input-container class="myarea">
+                        <label>Input</label>
+                        <textarea ng-model="textToHash" ng-change="updateHashedText()"></textarea>
+                        <small>{{textLength}}</small>
+                    </md-input-container>
+                </md-content>
+
+                <md-content class="md-padding">
+                    <md-input-container class="myarea">
+                        <label>Hash</label>
+                        <textarea ng-model="hashedText"></textarea>
+                        <small>{{hashedTextLength}}</small>
+                    </md-input-container>
+                </md-content>
+
+                <md-content class="md-padding">
+                    <md-input-container class="myarea">
+                        <label>Bits</label>
+                        <textarea ng-model="binaryValue"></textarea>
+                        <small>{{binaryValueLength}}</small>
+                    </md-input-container>
+                </md-content>
+            </md-content>
+
+        </md-tab>
+    </md-tabs>
+</md-content>
